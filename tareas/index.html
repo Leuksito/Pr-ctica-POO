@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tareas</title>
+  <style>
+    :root {
+      --bg: #eef2ee;
+      --card: #ffffff;
+      --ink: #1f2a24;
+      --muted: #66756b;
+      --accent: #2f6b4f;
+      --line: #d5ddd7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 3rem 1.25rem;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, sans-serif;
+    }
+    main { max-width: 38rem; margin: 0 auto; }
+    h1 { margin: 0; font-size: 2rem; }
+    #contador { margin: .25rem 0 1.5rem; color: var(--muted); }
+
+    #tareas { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+    .task {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: .9rem 1rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .task__body { display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
+    .task__text { font-size: 1.05rem; }
+    .task__category { font-size: .85rem; color: var(--muted); }
+    .task__button {
+      flex-shrink: 0;
+      padding: .45rem .9rem;
+      border: 0;
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      font: inherit;
+      cursor: pointer;
+    }
+    .task__button:focus-visible { outline: 3px solid #9bd0b4; outline-offset: 2px; }
+    .task__button:disabled { background: var(--line); color: var(--muted); cursor: default; }
+
+    .task--done .task__text { text-decoration: line-through; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Tareas</h1>
+    <p id="contador" aria-live="polite"></p>
+    <ul id="tareas">
+      <li>Cargando…</li>
+    </ul>
+  </main>
+
+  <script src="scripts/types/task.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

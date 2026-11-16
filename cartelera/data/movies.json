@@ -1,0 +1,38 @@
+[
+  {
+    "title": "13 Horas: Los soldados secretos de Bengasi",
+    "director": "Michael Bay",
+    "year": 2016,
+    "rating": 10
+  },
+  {
+    "title": "Peaky Blinders: El hombre inmortal",
+    "director": "Tom Harper",
+    "year": 2025,
+    "rating": 9.5
+  },
+  {
+    "title": "La Odisea",
+    "director": "Christopher Nolan",
+    "year": 2026,
+    "rating": 10
+  },
+  {
+    "title": "El corazón de la bestia",
+    "director": "David Ayer",
+    "year": 2026,
+    "rating": 8
+  },
+  {
+    "title": "Dune: Parte dos",
+    "director": "Denis Villeneuve",
+    "year": 2024,
+    "rating": 8
+  },
+  {
+    "title": "The Mongoose",
+    "director": "Mark Vanselow",
+    "year": 2026,
+    "rating": 5
+  }
+]

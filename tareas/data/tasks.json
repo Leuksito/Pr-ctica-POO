@@ -1,0 +1,37 @@
+[
+  {
+    "text": "Preparar la presentación del lunes",
+    "category": "Trabajo",
+    "completed": false
+  },
+  {
+    "text": "Responder al correo del cliente",
+    "category": "Trabajo",
+    "completed": true
+  },
+  {
+    "text": "Comprar fruta y verdura",
+    "category": "Casa",
+    "completed": false
+  },
+  {
+    "text": "Pagar el recibo de la luz",
+    "category": "Casa",
+    "completed": false
+  },
+  {
+    "text": "Salir a correr 30 minutos",
+    "category": "Salud",
+    "completed": false
+  },
+  {
+    "text": "Pedir cita con el dentista",
+    "category": "Salud",
+    "completed": true
+  },
+  {
+    "text": "Terminar el capítulo 4 del curso de JavaScript",
+    "category": "Estudio",
+    "completed": false
+  }
+]

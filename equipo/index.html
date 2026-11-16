@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equipo</title>
+  <style>
+    :root {
+      --bg: #f4f1f8;
+      --card: #ffffff;
+      --ink: #231d2e;
+      --muted: #6b6478;
+      --line: #ddd7e6;
+      --accent: #5b3fa0;
+      --on: #1f7a4d;
+      --off: #a3402f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 3rem 1.25rem;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, sans-serif;
+    }
+    main { max-width: 52rem; margin: 0 auto; }
+    h1 { margin: 0 0 1.25rem; font-size: 2rem; }
+
+    .filter { display: flex; align-items: center; gap: .6rem; margin-bottom: 1.5rem; }
+    .filter select {
+      padding: .45rem .7rem;
+      font: inherit;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--card);
+      color: var(--ink);
+    }
+    .filter select:focus-visible { outline: 3px solid #c5b6ea; outline-offset: 2px; }
+
+    #equipo {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+      gap: 1rem;
+    }
+    .member {
+      display: flex;
+      gap: .9rem;
+      align-items: center;
+      padding: 1rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .member__avatar {
+      flex-shrink: 0;
+      width: 3rem;
+      height: 3rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+    }
+    .member__name { margin: 0; font-size: 1.05rem; }
+    .member__role { margin: .15rem 0 .35rem; font-size: .9rem; color: var(--muted); }
+    .member__status { margin: 0; font-size: .85rem; font-weight: 600; }
+    .member__status::before { content: "● "; }
+    .member__status--on { color: var(--on); }
+    .member__status--off { color: var(--off); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Equipo</h1>
+    <div class="filter">
+      <label for="departamento">Departamento</label>
+      <select id="departamento">
+        <option value="">Todos</option>
+      </select>
+    </div>
+    <section id="equipo" aria-live="polite">Cargando…</section>
+  </main>
+
+  <script src="scripts/types/member.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

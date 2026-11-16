@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Laura Martín",
+    "role": "Desarrolladora backend",
+    "department": "Desarrollo",
+    "available": true
+  },
+  {
+    "name": "Jordi Puig",
+    "role": "Desarrollador frontend",
+    "department": "Desarrollo",
+    "available": false
+  },
+  {
+    "name": "Marta Soler",
+    "role": "Tech lead",
+    "department": "Desarrollo",
+    "available": true
+  },
+  {
+    "name": "Carlos Vidal",
+    "role": "Diseñador de producto",
+    "department": "Diseño",
+    "available": true
+  },
+  {
+    "name": "Núria Ferrer",
+    "role": "Diseñadora UX",
+    "department": "Diseño",
+    "available": false
+  },
+  {
+    "name": "Pablo Ortega",
+    "role": "Responsable de marketing",
+    "department": "Marketing",
+    "available": true
+  },
+  {
+    "name": "Elena Roca",
+    "role": "Community manager",
+    "department": "Marketing",
+    "available": true
+  },
+  {
+    "name": "Sergio Navarro",
+    "role": "Analista de datos",
+    "department": "Datos",
+    "available": false
+  }
+]
